@@ -8,7 +8,7 @@ steps:
 
 -  task: UseJavaVersion@1
   inputs:
-    versionSpec: '21'
+    versionSpec: '11.7'
     architecture: 'x64'
 
 - script: mvn -B package --file pom.xml
