@@ -1,14 +1,14 @@
 trigger: none
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: 'default'
 
 steps:
 - checkout: self
 
--  task: UseJavaVersion@1
+- task: JavaToolInstaller@0
   inputs:
-    versionSpec: '11.7'
+    versionSpec: '11'
     architecture: 'x64'
 
 - script: mvn -B package --file pom.xml
