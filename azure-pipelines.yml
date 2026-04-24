@@ -1,4 +1,8 @@
 trigger: none
+- task: DownloadPipelineArtifact@2
+  inputs:
+    buildType: 'current'
+    targetPath: '$(Pipeline.Workspace)'
 
 pool:
   vmImage: 'default'
