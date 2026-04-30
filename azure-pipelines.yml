@@ -1,4 +1,5 @@
 trigger: none
+  
   pool:
   name: 'MySelfHostedPool'
   
