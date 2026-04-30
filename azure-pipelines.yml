@@ -1,8 +1,7 @@
 trigger: none
-
-pool:
-  vmImage: 'default'
-
+  pool:
+  name: 'MySelfHostedPool'
+  
 steps:
 - checkout: self
 
